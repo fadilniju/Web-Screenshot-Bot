@@ -39,8 +39,8 @@ async def checker(_, message: Message):
 @WebshotBot.on_message(filters.command(["start"]))
 async def start(_, message: Message) -> None:
     await message.reply_text(
-        f"<b>Hi {message.from_user.first_name} 👋\n"
-        "I can render website of a given link to either PDF or PNG/JPEG</b>",
+        f"<b>Hello {message.from_user.first_name} 👋\n"
+        "I can Give You A Screenshot from website of a given link to either PDF or PNG/JPEG</b>",
         quote=True,
         reply_markup=InlineKeyboardMarkup(
             [[InlineKeyboardButton("❓ About", callback_data="about_cb")]]
@@ -51,7 +51,7 @@ async def start(_, message: Message) -> None:
 @WebshotBot.on_message(filters.command(["about", "feedback"]))
 async def feedback(_, message: Message) -> None:
     await message.reply_text(
-        text="This project is open ❤️ source",
+        text="<b>Hi {message.from_user.first_name} 👋 \n This project is open ❤️ source </b> ",
         reply_markup=InlineKeyboardMarkup(
             [
                 [
@@ -64,7 +64,15 @@ async def feedback(_, message: Message) -> None:
                         url="https://github.com/alenpaul2001/Web-Screenshot-Bot/issues",
                     ),
                 ],
-                [
+                [ InlineKeyboardButton(
+
+                        "👼OWNER",
+
+                        url="https://t.me/DMTheAngry",
+
+                    ),
+
+                ],
                     InlineKeyboardButton(
                         "🌃 Profile Icon Credit",
                         url="https://www.goodfon.com/wallpaper/art-vector-background-illustration-minimalism-angga-tanta-12.html",
