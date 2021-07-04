@@ -51,7 +51,7 @@ async def start(_, message: Message) -> None:
 @WebshotBot.on_message(filters.command(["about", "feedback"]))
 async def feedback(_, message: Message) -> None:
     await message.reply_text(
-        text="<b>Hi {message.from_user.first_name} 👋 \n This project is open ❤️ source </b> ",
+        text="<b>Hi User 👋 \n This project is open ❤️ source </b> ",
         reply_markup=InlineKeyboardMarkup(
             [
                 [
