@@ -72,7 +72,7 @@ async def feedback(_, message: Message) -> None:
 
                     ),
 
-                ],
+                
                     InlineKeyboardButton(
                         "🌃 Profile Icon Credit",
                         url="https://www.goodfon.com/wallpaper/art-vector-background-illustration-minimalism-angga-tanta-12.html",
